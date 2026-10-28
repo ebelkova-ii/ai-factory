@@ -17,7 +17,7 @@ Read this compact map when resolving task scope and checklist routing. It record
 
 The Check-list frame controls routing and records review results; it is not a ninth specification block. Its 11 checks belong to the eight groups above. Two checks in one group are worked through as one block before moving onward.
 
-All eight blocks end with «Замечания и спорные моменты» under the shared [findings rules](findings.md). It is a subsection within each block, not a separate workflow block. Reuse the construction token-attention card treatment; include only findings or material open points and group repeats.
+Any of the eight blocks may end with «Замечания и спорные моменты» when it has substantive findings, improvements, or open questions under the shared [findings rules](findings.md). Do not create an empty subsection or a no-findings message. It is a subsection within each block, not a separate workflow block. Reuse the construction token-attention card treatment; include only findings or material open points and group repeats.
 
 ## Recognizing frames
 

@@ -9,16 +9,17 @@ Work in Codex using the connected Figma MCP tools to read the selected component
 
 Write questions and specification content in Russian. Preserve exact technical names of components, properties, variants, tokens, and styles. Preserve the template's section titles unless the user requests a change.
 
-For every processed block, read [references/findings.md](references/findings.md) and include a bottom subsection «Замечания и спорные моменты». Use compact attention cards matching the construction token-findings treatment. Put only findings/open points there, grouping repeats; do not duplicate correct-layer inventories or rewrite unselected blocks.
+For every processed block, read [references/findings.md](references/findings.md) and include a bottom subsection «Замечания и спорные моменты» only when there are actual findings, required improvements, or material open questions. Do not create an empty subsection or a no-findings message. Use compact attention cards matching the construction token-findings treatment. Put only findings/open points there, grouping repeats; do not duplicate correct-layer inventories or rewrite unselected blocks.
 
 ## Interaction and authorization
 
 - Ask exactly one question at a time and wait for the answer. Do not combine several information requests into one question. Use facts already available from the component or previous answers.
-- Clarify every required fact you cannot establish from the component or supplied context. Do not invent behavior, owners, implementation status, dates, rules, token currency, accessibility results, or missing states. Do not silently replace clarification with “нет данных”. If the user explicitly cannot provide a fact, agree how to represent that gap before finalizing the affected content.
+- Clarify every required fact you cannot establish from the component or supplied context. Do not invent behavior, owners, implementation status, dates, rules, token currency, accessibility results, or missing states. Do not silently replace clarification with “нет данных”. If the user explicitly cannot provide a fact, agree how to represent that gap before finalizing the affected content. An explicit request to record it in remarks authorizes that described entry under references/findings.md, not an invented answer or a source fix. Continue with confirmed information and keep the unresolved requirement visible; do not mark it passed.
 - When you identify a component problem, pause before further edits. Explain the evidence and a concrete proposed fix, then ask whether to apply it. Wait. Apply only the approved fix and verify it; if declined, leave the component unchanged, retain the finding, and continue with confirmed information.
 - Distinguish a proven defect from an unknown requirement or a suggestion. Ask about the requirement before calling uncertainty a defect. Do not introduce an unsolicited redesign.
 - For a new specification, prepare and agree one block at a time before filling its supplied placeholder frame. Block approval authorizes its described text, demonstration instances, and layout adjustments; it does not authorize changing the source component or another block. After writing and checking the block, ask before starting the next one.
 - A request to update an existing specification requires approval for each concrete change. Show the frame/element, current and proposed content or layout, and the reason; ask one permission question. Apply only that approved change. A refusal skips it. One approval does not authorize later changes.
+- Reuse confirmed decisions and corporate departures from library defaults across blocks. Keep a compact record in task context or existing task notes of decisions, sources, deferred questions, and declined changes; do not require a new local record file to run this skill. When a new fact conflicts with relevant previously read content, identify the exact affected text. Read another block only as needed to verify that conflict, without starting an unrelated full review. Propose each correction separately under the existing approval rules; obtain scope authorization before editing an unselected block. Honor a refusal and do not repeat the same proposal without materially new evidence or a new user request. Never present a retained inconsistency as fixed.
 - If a proposed fix requires an unavailable capability, explain the limit and ask for the necessary action; never claim it was performed. Visual examples of transitions are not working prototypes.
 
 ## 1. Identify the component and target frames
@@ -26,6 +27,8 @@ For every processed block, read [references/findings.md](references/findings.md)
 Determine two independent choices from the user's request: operation (create from placeholders or revise existing documentation) and scope (all blocks, one block, or several named blocks). Creating a specification does not require completing every block in the same run. If scope is unclear, ask one scope question before substantive analysis or edits; never silently expand a targeted request to the whole specification.
 
 Examples: “Создай спецификацию с нуля” selects all blocks; “Заполни только passport и construction” selects those two; “Доработай states” revises only states. Follow the live checklist's order within the selected subset. Do not reset or complete skipped blocks. If a selected block needs a fact from another block, reuse available confirmed information or ask one question; do not start editing that other block without authorization.
+
+After resolving operation and scope, establish the source library if it is not already known, then separately ask whether to cross-check against Taiga UI. Ask one question at a time and reuse explicit choices already supplied. A direct request for the cross-check is sufficient authorization to read its public sources. When enabled, read [references/taiga-ui.md](references/taiga-ui.md): resolve the latest stable release at task start, match the component, and apply its source and conflict rules. Do not ask for the company's installed version. When declined, continue the existing workflow without Taiga dependencies. This source choice does not authorize edits or change the selected block scope.
 
 Use the current canvas selection. The user selects only the component, not the templates. Accept a main component, a component set, or an instance belonging to one component. For an instance, inspect the accessible main component and variants, distinguishing instance overrides from general component facts. If selection is empty, ambiguous, or includes unrelated components, ask one question before editing.
 
@@ -45,9 +48,9 @@ Read annotations with their grouping/brackets, not just text traversal order. If
 
 For each block:
 
-1. Identify the current block and its associated checks. Read only its required source and template data.
-2. Clarify missing information, one question at a time, waiting after each answer. Handle component problems through separate fix approval.
-3. Assemble a concise draft of this block's content, relevant demonstrations, its bottom «Замечания и спорные моменты» subsection, and checklist findings. Show it in Codex and ask for approval before writing it to Figma. Do not begin other blocks while waiting.
+1. Identify the current block and its associated checks. Read only its required source and template data. When Taiga cross-checking is enabled, also consult the relevant evidence for this block under [references/taiga-ui.md](references/taiga-ui.md), keeping Figma observations, Taiga facts, and confirmed corporate requirements distinct. Include compact source attribution in the block draft; the existing approvals and checks still apply.
+2. Clarify missing information, one question at a time, waiting after each answer. Respect explicit deferrals under references/findings.md instead of repeating the deferred question. Handle component problems through separate fix approval.
+3. Assemble a concise draft of this block's content, relevant demonstrations, its bottom «Замечания и спорные моменты» subsection when needed under the findings rules, and checklist findings. Show it in Codex and ask for approval before writing it to Figma. Do not begin other blocks while waiting.
 4. In create mode, write only the agreed block. In revise mode, retain the per-change approval rule: describe and obtain permission for each concrete change; an overall draft approval does not waive it. If a draft explicitly presents one concrete change, its approval can authorize that change without a duplicate question.
 5. Verify the changed frame and associated checks. Update only this block's checklist entries; in revise mode, checklist changes need approval too. Preserve the remaining blocks, their content, and their statuses.
 6. Report the block's result and ask one explicit question about moving to the next selected block. Wait. Approval of a draft is not approval to advance. If no selected blocks remain, finish the requested scope without offering the unselected remainder as unfinished mandatory work.
@@ -104,7 +107,7 @@ Read [references/accessibility.md](references/accessibility.md) for source-backe
 
 ### Animation
 
-Preserve the animation heading and existing description/demonstration structure. Describe confirmed triggers, transitions, affected properties, timing, duration, easing, interruption behavior, and reduced-motion behavior where relevant. Ask about unknown parameters; do not copy sample values. If animation is not applicable, agree that conclusion. Demonstration frames and descriptions do not establish that a working prototype or implementation has been tested.
+Preserve the animation heading and existing description/demonstration structure. Describe confirmed triggers, transitions, affected properties, timing, duration, easing, interruption behavior, and reduced-motion behavior where relevant. When library cross-checking is enabled, first investigate extractable animation facts through [references/taiga-ui.md](references/taiga-ui.md), including shared styles and tokens. Ask about product choices and parameters still unavailable after that investigation; do not copy sample values. If animation is not applicable, agree that conclusion. Demonstration frames and descriptions do not establish that a working prototype or implementation has been tested.
 
 ### Finalize the checklist
 
@@ -113,6 +116,10 @@ Finalize only the current block's checklist results after its agreed content and
 ## 4. Preserve layout and verify
 
 Keep the existing frames beside the component on the same page. Preserve frame identity, section order, hierarchy, styles, visual relationships, and layout conventions. Adapt text, measurements, demo instances, and the number of repeated blocks to confirmed data. Adjust height and auto layout to fit content without clipping; do not redesign unrelated content. In update mode, layout adjustments are changes requiring approval too.
+
+Before presenting a change for approval, inspect both text and related demonstrations in the current block for unrelated template components, labels, and behavior. Present required text, demo, and associated layout changes concretely under the existing revision approval rule. Use real instances; label a static demonstration as static rather than implying a working transition.
+
+Before writing, recheck the target node and current text. Load every font used by the edited text runs; a mixed fontName is not a font to load. Preserve or restore applicable hyperlinks, range token bindings, emphasis, and paragraph/list formatting after replacement. Correct accidental empty bullets or inherited formatting within the approved edit, without restyling unrelated content. Verify text, links, instance relationships, protected content, and the rendered result afterward.
 
 Use real properties of the supplied frames for visual matching. Do not treat example photographs, links, or illustrations as part of the selected component's facts. Preserve the shared visual system when expanding initially empty sections. Do not delete a required section merely because it may be inapplicable.
 
@@ -124,8 +131,8 @@ Inspect the resulting canvas for:
 - Accurate instances, annotations, properties, and measurements.
 - Readable text, correct wrapping, no clipping or overlap, consistent alignment and spacing.
 - No unapproved changes to the source, finished documentation, or unrelated nodes.
-- A bottom remarks/open-points subsection in each processed block, accurate statuses, and no duplicated finding inventories.
+- A bottom remarks/open-points subsection only in blocks with substantive findings, improvements, or open questions; accurate statuses and no duplicated finding inventories. Do not automatically remove an existing subsection without revision approval.
 
 Correct assembly errors within the already authorized scope. In update mode, ask again if a correction goes beyond the specific approved change. Do not report a visual check you could not perform.
 
-End with a short Russian report identifying filled or updated frames, approved component fixes, retained findings, and material limitations. Distinguish design review from tested implementation behavior. Do not claim completion while required information is still unresolved; ask the next single question instead.
+End with a short Russian report naming the reviewed blocks and approved documentation/source changes. Separately identify confirmed corporate differences from the library, retained findings and explicitly deferred decisions, and checks not performed. Distinguish a completed review from complete requirements or a ready component, and design/source inspection from tested implementation behavior. When reviewing a cross-check trial, distinguish evidence that the skill worked from evidence that the product implementation worked. Explicitly deferred requirements may remain after the agreed review finishes, with their status reported honestly. For essential unknowns not explicitly deferred, ask the next single clarification question rather than claiming completion.

@@ -18,4 +18,4 @@ Use real component instances and representative content that produces each agree
 
 When annotating dimensions, use the supplied palette under [measurement-tools.md](measurement-tools.md). Measure each assembled example and set its annotation to that actual value; do not rely solely on a predicted height. Preserve source instances, layout settings, and the Tools palette. Verify source/instance distinctions, content, bounds, annotations, and visual layout after assembly.
 
-End with «Замечания и спорные моменты» under [findings.md](findings.md). Keep observations, hypotheses, confirmed requirements, and unresolved decisions distinguishable. Preserve deferred questions rather than inventing a solution or removing them after a demonstration succeeds.
+Include «Замечания и спорные моменты» only when substantive entries are needed under [findings.md](findings.md); do not add an empty subsection or a no-findings message. Keep observations, hypotheses, confirmed requirements, and unresolved decisions distinguishable. Preserve deferred questions rather than inventing a solution or removing them after a demonstration succeeds.
