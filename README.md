@@ -9,7 +9,7 @@
 | Скилл | Назначение | Версия | Скачать | Исходники |
 | --- | --- | --- | --- | --- |
 | figma-component-description | Создание и ревью спецификаций компонентов в Figma со сверкой Taiga UI | [v1.1.0](https://github.com/ebelkova-ii/ai-factory/releases/tag/figma-component-description-v1.1.0) | [Скачать ZIP](https://github.com/ebelkova-ii/ai-factory/releases/download/figma-component-description-v1.1.0/figma-component-description-v1.1.0.zip) | [Папка скилла](https://github.com/ebelkova-ii/ai-factory/tree/main/skills/figma-component-description) |
-| figma-dev-handoff-batch | Пакетная подготовка макетов Figma к разработке: десять областей проверки, сгруппированные решения и размерные схемы | [v1.0.0](https://github.com/ebelkova-ii/ai-factory/releases/tag/figma-dev-handoff-batch-v1.0.0) | [Скачать ZIP](https://github.com/ebelkova-ii/ai-factory/releases/download/figma-dev-handoff-batch-v1.0.0/figma-dev-handoff-batch-v1.0.0.zip) | [Папка скилла](https://github.com/ebelkova-ii/ai-factory/tree/main/skills/figma-dev-handoff-batch) |
+| figma-dev-handoff-batch | Пакетная подготовка макетов Figma к разработке: десять областей проверки, сгруппированные решения и размерные схемы. [Инструкция и шаблоны в Figma](https://www.figma.com/design/x36NhMsgRlaOeZb3ByafP0/%D0%93%D0%B0%D0%B9%D0%B4%D1%8B?node-id=381-9945) | [v1.0.0](https://github.com/ebelkova-ii/ai-factory/releases/tag/figma-dev-handoff-batch-v1.0.0) | [Скачать ZIP](https://github.com/ebelkova-ii/ai-factory/releases/download/figma-dev-handoff-batch-v1.0.0/figma-dev-handoff-batch-v1.0.0.zip) | [Папка скилла](https://github.com/ebelkova-ii/ai-factory/tree/main/skills/figma-dev-handoff-batch) |
 
 ### Как скачать
 
