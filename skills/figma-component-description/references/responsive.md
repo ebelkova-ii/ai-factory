@@ -1,6 +1,6 @@
 # Responsive Filling Rules
 
-Read when working on responsive behavior. Follow the block map, approval cycle, and shared findings rules. Inspect only the current component, relevant nested layout, and this block's template.
+Read only for selected responsive behavior. Use the shared dataset and package workflow in [SKILL.md](../SKILL.md), and the shared findings rules. Reuse the component, relevant nested layout and target template facts; fetch only missing evidence.
 
 ## Establish the rules
 
@@ -16,6 +16,6 @@ Preserve the Responsive heading and the live template's description/card treatme
 
 Use real component instances and representative content that produces each agreed layout. For a calendar, the displayed month/year, weekday alignment, and number of required week rows must agree. Adapt demonstration content and supported instance overrides; do not change the source or force a dimension merely to simulate an unconfirmed rule. Do not present static examples as a working responsive implementation.
 
-When annotating dimensions, use the supplied palette under [measurement-tools.md](measurement-tools.md). Measure each assembled example and set its annotation to that actual value; do not rely solely on a predicted height. Preserve source instances, layout settings, and the Tools palette. Verify source/instance distinctions, content, bounds, annotations, and visual layout after assembly.
+When annotating dimensions, use the supplied palette under [measurement-tools.md](measurement-tools.md). Measure each assembled example and set its annotation to that actual value; do not rely solely on a predicted height. Preserve source instances, layout settings, and the Tools palette. Include source/instance distinctions, content, bounds, annotations and visual layout in the consolidated output pass under [canvas-writing.md](canvas-writing.md); inspect actual assembly errors immediately.
 
 Include «Замечания и спорные моменты» only when substantive entries are needed under [findings.md](findings.md); do not add an empty subsection or a no-findings message. Keep observations, hypotheses, confirmed requirements, and unresolved decisions distinguishable. Preserve deferred questions rather than inventing a solution or removing them after a demonstration succeeds.

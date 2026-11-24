@@ -1,6 +1,6 @@
 # States Filling Rules
 
-Read only when working on the states block. Follow the block map and SKILL.md approval cycle. These rules are being refined with the user sequentially.
+Read for the selected states block. Use the shared dataset, grouped questions and concrete package approvals in [SKILL.md](../SKILL.md). The final subsection also applies narrowly when verifying an approved source fix.
 
 ## Coverage
 
@@ -30,7 +30,7 @@ For each state, describe:
 - What visually changes compared with the relevant baseline of the same part, in plain language (background, number color, marker, or a confirmed absence of change).
 - How the component/part behaves while in that state.
 
-Inspect corresponding layers and bindings internally when needed to verify visible changes; distinguish a binding change from a resolved value changing because of a mode change. Do not publish baseline → target token names, token paths, layer-by-layer parameter diffs, or unchanged inventories. Describe state findings visually too, using exact values only where necessary to identify a defect; token-binding audits belong to construction. Clarify an unknown baseline, trigger, behavior, or value one question at a time; do not infer implementation behavior from appearance alone.
+Inspect corresponding layers and bindings internally when needed to verify visible changes; distinguish a binding change from a resolved value changing because of a mode change. Do not publish baseline → target token names, token paths, layer-by-layer parameter diffs, or unchanged inventories. Describe state findings visually too, using exact values only where necessary to identify a defect; token-binding audits belong to construction. Include unknown baselines, triggers, behavior or values as independent questions in the relevant thematic package; do not infer implementation behavior from appearance alone.
 
 Do not publish a raw structural diff as intended state behavior. Different internal wrappers, overrides, or source variants can produce numerical geometry differences without establishing an intended change in padding, size, or radius. Check that compared properties represent the same semantic element and confirm ambiguous geometry changes before including them. When the user clarifies an invariant, omit it from the change list; retain any source discrepancy separately as evidence rather than changing the source without permission. Component-specific values belong in task records, not universal skill rules.
 

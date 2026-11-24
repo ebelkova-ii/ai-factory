@@ -1,10 +1,10 @@
 # Conditional Remarks and Open Questions
 
-Read when drafting or updating any specification block. This shared rule applies to passport, construction, variants, states, responsive behavior, edge cases, accessibility, and animation. It supplements the block-specific guidance without authorizing edits outside the selected scope.
+Read once for the selected scope. These rules govern remarks in all eight blocks; [SKILL.md](../SKILL.md) governs questions, scope and approvals.
 
 ## Placement and appearance
 
-When a processed block has actual findings, required improvements, or material open questions, end it with a subsection titled «Замечания и спорные моменты», inside that block's frame, after its main content. Reuse the visual treatment of the construction token-attention cards: existing text styles, card backgrounds, corner radii, spacing, and, where useful, a relevant part demonstration. Use available nearby template cards as style references; do not modify the reference block just to reuse its appearance.
+Only substantive findings, required improvements or material open questions justify a bottom «Замечания и спорные моменты» subsection inside the affected block. Reuse nearby construction attention-card text styles, backgrounds, radii and spacing, with a part demonstration where useful. Do not modify the reference block to copy its appearance.
 
 When needed, this subsection may be added even if the original template lacks it. Do not add it when there are no substantive entries. Preserve the surrounding layout and adjust auto layout/height to fit. For passport, place it outside and after the designer-owned history area; Owner, Last change, and the history region remain untouched. Normal container reflow is permitted within approved layout adjustments; do not edit protected content.
 
@@ -27,14 +27,14 @@ If the block was checked and no substantive entries remain, do not create a subs
 
 ## Workflow and permissions
 
-When needed, include this subsection in the block draft and its approval. In revision mode, adding or changing entries follows the per-change approval rule. Its presence does not waive pauses for questions, authorize source-component fixes, or allow unresolved essential facts to be replaced by an open-question list while claiming completion.
+Include entries in the concrete documentation package; identify revise additions/edits/removals individually, even when approved together. An entry authorizes neither a source fix nor a completion claim with essential unresolved facts.
 
-Maintain findings in the current block only. If the same issue is relevant elsewhere, reuse known evidence and use a short reference when that other block is in scope; do not rewrite completed or unselected blocks automatically. Align this block's checklist statuses with retained findings, without changing item order or grouping annotations. Recording a finding does not mean the source passes the corresponding check.
+Place each finding in its affected selected block. If the same issue is relevant elsewhere, reuse known evidence and use a short reference when that other block is in scope; do not rewrite completed or unselected blocks automatically. Attribute each retained finding/deferral to its affected checks and dependencies, preserving order/grouping. Do not reject every check in a block for one unrelated issue. Separate unperformed checks from verified defects using the actual template status semantics; a finding never establishes compliance.
 
 ## Explicitly deferred decisions
 
-A user request such as “add this to remarks” authorizes recording the described question or improvement at the identified location. It does not confirm the proposed behavior, approve a source change, or waive later approvals. If the content or location is ambiguous, ask one clarification question before writing.
+A user request such as “add this to remarks” authorizes recording the described question or improvement at the identified location. It does not confirm the proposed behavior, approve a source change, or waive later approvals. If content or location is ambiguous, request the focused missing decision before writing.
 
 Record what is known, what remains undecided, its effect on the specification, and the actual status. Reuse confirmed facts and do not invent error messages, visuals, timing, or applicability. Keep conditional scenarios conditional until their applicability is established.
 
-After an explicit deferral, continue with the confirmed portion without repeatedly asking the same question. Retain the separate approval to advance to the next block. A review may finish with disclosed deferred work, but unresolved requirements must not be called complete, checks passed, or the component ready. If the unknown prevents even a safe limited description, explain that dependency and agree the limited record or scope. Do not use this path to bypass an essential unknown the user has not deferred.
+After an explicit deferral, continue with the confirmed portion without repeatedly asking the same question. Apply approved independent output without transition gates; keep affected dependencies unresolved. A review may finish with disclosed deferred work, but unresolved requirements must not be called complete, checks passed, or the component ready. If the unknown prevents even a safe limited description, explain that dependency and agree the limited record or scope. Do not use this path to bypass an essential unknown the user has not deferred.

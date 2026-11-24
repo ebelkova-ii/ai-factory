@@ -15,4 +15,6 @@ Reuse an existing annotation instance or create an instance from its accessible 
 
 Read actual dimensions, paddings, gaps, and corner radii from the relevant source layer. For external distances, use the appropriate common coordinate space and distinguish the gap from container padding. Do not confuse annotation geometry with the measured component's geometry. Values like 72, 8, 16, and 24 in the tool palette are sample values, not defaults.
 
+Plan label lanes from actual target/tool bounds before placement, especially for tiny elements. Separate width/height labels from radius and spacing labels without obscuring artwork or moving endpoints away from the measured span. Prefer a clearly scoped shared annotation for identical geometry; add a real companion instance only when available space cannot keep labels readable. Check rendered placement, not bounds alone.
+
 Keep source annotation instances in Figma: they carry editable properties and geometry that an image cannot replace. A local screenshot may be an optional visual aid, not the source for measurement values or component creation. Do not hardcode current file/node IDs into reusable operations. If tools cannot be found or their source is unavailable, ask how to obtain them before substituting other annotations.

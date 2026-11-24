@@ -1,6 +1,6 @@
 # Specification Block Map
 
-Read this compact map when resolving task scope and checklist routing. It records the user-confirmed grouping of the template on 23 October 2026. Detailed field-filling rules will be refined separately with the user; this map does not establish new requirements for a component.
+Read once to resolve scope, target aliases and live checklist routing. Use [SKILL.md](../SKILL.md) for the shared analysis and approval workflow; this map adds no component requirements.
 
 ## Block order and checklist ownership
 
@@ -15,7 +15,7 @@ Read this compact map when resolving task scope and checklist routing. It record
 | 7 | accessibility | «Accessibility — описаны лучшие практики для текущего компонента» | Document component-specific accessibility guidance and distinguish it from verified implementation results | Heading, guidance text, and demonstration |
 | 8 | animation | «Анимация — описано поведение, параметры» | Document component-specific motion behavior and parameters | Heading, description area, and demonstration; placeholder content must not be treated as approved motion rules |
 
-The Check-list frame controls routing and records review results; it is not a ninth specification block. Its 11 checks belong to the eight groups above. Two checks in one group are worked through as one block before moving onward.
+The Check-list frame controls routing and records review results; it is not a ninth specification block. Its 11 checks belong to the eight groups above. Checks in the same group share block ownership; they are not separate approval gates.
 
 Any of the eight blocks may end with «Замечания и спорные моменты» when it has substantive findings, improvements, or open questions under the shared [findings rules](findings.md). Do not create an empty subsection or a no-findings message. It is a subsection within each block, not a separate workflow block. Reuse the construction token-attention card treatment; include only findings or material open points and group repeats.
 
@@ -40,18 +40,4 @@ Select all, one, or several blocks from the user's request, independently of cre
 
 Reuse confirmed facts across blocks without repeating the brief. A need for information from another block is not permission to edit it. In particular, properties reviewed under states may describe variants, and tokens reviewed under construction may be used throughout the component; their checklist ownership does not authorize edits to other documentation blocks.
 
-Within each block, follow the approval cycle in SKILL.md. Detailed writing conventions, field requirements, demonstration coverage, and completion rules are not newly settled by this map. Preserve existing agreed rules until the user refines the relevant block. No screenshot or example value proves behavior of the selected component.
-
-## Block-specific filling guidance
-
-For passport, read [passport.md](passport.md) only when working on that block. Its field rules override earlier general placeholder-cleanup guidance: Owner, Last change, and the history region are protected and remain untouched.
-
-For construction, read [construction.md](construction.md); for measurements, follow its link to the measurement-tool reference. Size coverage, layout, nested-component, and layer/token requirements are recorded there. Unbound colors use their actual HEX code; unbound typography and sizes use their actual values. All receive an attention note. Rules for the remaining blocks await their sequential review with the user.
-
-For variants, read [variants.md](variants.md). Show and describe every existing variant-property combination, not a representative subset. Additional filling conventions are still being refined with the user.
-
-For states, read [states.md](states.md). Include states of both the selected component and its nested components, grouped by state family in the live template. Use concise visual descriptions without token-to-token diffs, paired examples, and only behaviorally valid combinations. Record contradictory source variants as findings.
-
-For responsive behavior, read [responsive.md](responsive.md). Separate observed sizes from confirmed rules and content sizing from fixed dimensions. Demonstrate agreed behavior with real instances and measured annotations; retain deferred width and mobile-presentation decisions as open findings.
-
-For edge cases, read [edge-cases.md](edge-cases.md). Confirm applicability and expected behavior for the current scenarios. Distinguish local unavailability from no available result, and preliminary empty-state proposals from approved component UI. Preserve unresolved presentation decisions in the bottom findings subsection.
+Use the selected blocks' detailed references through the routing table in [SKILL.md](../SKILL.md). Source facts, findings and confirmed decisions may serve several selected blocks without authorizing edits to others.

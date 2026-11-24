@@ -1,6 +1,6 @@
 # Accessibility: Evidence, Impact, and Risks
 
-Read when drafting or revising the accessibility block. Follow the block approval cycle in `SKILL.md` and the shared findings rules. Write the resulting specification in Russian.
+Read only for the selected accessibility block. Use grouped questions and concrete package approvals in [SKILL.md](../SKILL.md), and the shared findings rules. Write the resulting specification in Russian.
 
 ## Find applicable expert guidance
 
@@ -12,4 +12,4 @@ In the Codex draft, present each substantive recommendation as **practice → us
 
 ## Surface debatable choices
 
-When more than one credible pattern fits, compare the relevant alternatives before recommending one. Explain why the proposed or user-selected option fits this component, what could go wrong for users, which users or situations are most affected, and how the risk can be reduced or tested. If the choice depends on unknown product behavior, ask one clarification question at a time before describing it as confirmed. Put material unresolved choices and retained risks in the block's bottom «Замечания и спорные моменты» subsection. Do not present a risk-bearing option as WCAG-compliant solely because it appears in a design file or an expert example.
+When more than one credible pattern fits, compare the relevant alternatives before recommending one. Explain why the proposed or user-selected option fits this component, what could go wrong for users, which users or situations are most affected, and how the risk can be reduced or tested. If the choice depends on unknown product behavior, include the missing decision in the thematic questionnaire before describing it as confirmed. Put material unresolved choices and retained risks in the block's bottom «Замечания и спорные моменты» subsection. Do not present a risk-bearing option as WCAG-compliant solely because it appears in a design file or an expert example.
